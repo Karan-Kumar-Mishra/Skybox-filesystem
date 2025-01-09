@@ -15,7 +15,7 @@ const app = express();
 connectDB();
 
 // CORS setup
-app.use(cors({ origin: process.env.CLIENT_URI }));
+app.use(cors());
 
 // Static files serving
 app.use(express.static("public/uploads"));
